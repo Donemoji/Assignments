@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
@@ -42,9 +43,22 @@ namespace TexasHoldemAssignment {
             sharedTrumpCard = trumpCard.SharedRollCardsInTrump();
             sharedTrumpCard.Sort();
 
+            foreach (int item in computerTrumpCard) {
+                Debug.WriteLine(item);
+            }
+            foreach (int item in playerTrumpCard) {
+                Debug.WriteLine(item);
+            }
+            foreach (int item in sharedTrumpCard) {
+                Debug.WriteLine(item);
+            }
+
+
 
 
             Console.WriteLine("컴퓨터 카드");
+            
+
             trumpCard.ShowCardInTrumpVertical(computerTrumpCard, 5);
             Console.WriteLine();
             Console.WriteLine("나의 카드");

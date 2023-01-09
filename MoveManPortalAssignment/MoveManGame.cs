@@ -14,6 +14,7 @@ namespace MoveManPortalAssignment {
     internal class MoveManGame {
         
 
+
         private const int GAME_WIDTH = 10;
         private const int GAME_HEIGHT = 10;
         private int[,] blocks;
@@ -103,6 +104,11 @@ namespace MoveManPortalAssignment {
             Console.WriteLine();
 
         }
+
+        
+
+
+
 
         public void Show() {
             for (int i = 0; i <= blocks.GetUpperBound(0); i++) {
